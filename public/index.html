@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicação para geolocalização e compartilhamento de obras da ENEL.">
+    
+    <title>Geo-Obras ENEL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/logotipo.png" type="image/png">
+</head>
+<body>
+
+    <div id="login-screen" class="screen">
+        <main class="login-container">
+            <img src="assets/logotipo.png" alt="Logotipo Geo-Obras" class="logo">
+            <h1>Acesso ao Sistema</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" placeholder="Login" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Senha" required>
+                </div>
+                <button type="submit">Entrar</button>
+                <p id="login-error" class="error-message"></p>
+            </form>
+        </main>
+    </div>
+
+    <div id="main-content" class="screen hidden">
+        
+        <header class="header">
+            <div class="header-content">
+                <img src="assets/logotipo.png" alt="Logotipo Geo-Obras" class="logo-small">
+                <h1>Geolocalizador de Obras</h1>
+            </div>
+            <button id="logout-btn" title="Sair da aplicação">Sair</button>
+        </header>
+
+        <main class="main-container">
+            <section class="search-section" aria-labelledby="search-title">
+                <h2 id="search-title" class="visually-hidden">Busca de Obras</h2>
+                <form id="search-form">
+                    <label for="search-input" class="visually-hidden">Código da Obra</label>
+                    <input type="text" id="search-input" placeholder="Digite o código da obra para buscar..." required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </section>
+            
+            <section id="results-container" class="results-container hidden">
+                
+                <article id="info-card" class="card">
+                    <h3>Informações da Obra</h3>
+                    <dl id="info-content" class="info-list">
+                        <dt>Nome:</dt>
+                        <dd id="info-nome">--</dd>
+                        <dt>Código:</dt>
+                        <dd id="info-codigo">--</dd>
+                        <dt>Latitude:</dt>
+                        <dd id="info-latitude">--</dd>
+                        <dt>Longitude:</dt>
+                        <dd id="info-longitude">--</dd>
+                    </dl>
+                    <p id="search-placeholder">Aguardando busca para exibir os dados.</p>
+                </article>
+
+                <aside id="actions-card" class="card">
+                    <h3>Ações Rápidas</h3>
+                    <div id="actions-buttons">
+                         <button id="btn-maps">Abrir no Mapa</button>
+                         <button id="btn-whatsapp">Compartilhar via WhatsApp</button>
+                         <button id="btn-copy">Copiar Dados</button>
+                    </div>
+                </aside>
+
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2025 Geo-Obras. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
