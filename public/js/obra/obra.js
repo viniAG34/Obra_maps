@@ -1,4 +1,4 @@
-import { displayResults, hideResults } from './ui.js';
+import { displayResults, hideResults } from '../shared/utils.js';
 
 // busca
 const searchForm = document.getElementById('search-form');

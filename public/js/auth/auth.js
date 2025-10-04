@@ -1,4 +1,4 @@
-import { showMainApp } from './ui.js';
+import { showMainApp } from '../shared/utils.js';
 
 // login e logout
 const loginForm = document.getElementById('login-form');

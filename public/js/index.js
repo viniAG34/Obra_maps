@@ -1,6 +1,6 @@
-import { showMainApp } from './modules/ui.js';
-import { setAuthConfig } from './modules/auth.js';
-import { setObraData } from './modules/obra.js';
+import { showMainApp } from './shared/utils.js';
+import { setAuthConfig } from './auth/auth.js';
+import { setObraData } from './obra/obra.js';
 
 
 async function loadData() {
