@@ -1,0 +1,32 @@
+{
+  "config": {
+    "credentials": {
+      "username": "teste",
+      "password": "teste123"
+    },
+    "messages": {
+      "loginError": "Usuário ou senha inválidos.",
+      "searchError": "Obra com o código \"{term}\" não encontrada."
+    }
+  },
+  "database": [
+    {
+      "id": "OBRA001",
+      "nome": "Poste de Iluminação A-01",
+      "latitude": -4.9699,
+      "longitude": -37.9734
+    },
+    {
+      "id": "OBRA002",
+      "nome": "Bomba d'água B-15",
+      "latitude": -4.9710,
+      "longitude": -37.9750
+    },
+    {
+      "id": "OBRA003",
+      "nome": "Câmera de Segurança C-03",
+      "latitude": -4.9685,
+      "longitude": -37.9712
+    }
+  ]
+}
